@@ -7,21 +7,26 @@ import ArtworkList from './Components/ArtworkList.jsx'
 import ArtistPage from './Components/ArtistPage.jsx'
 import ArtworkForm from './Components/ArtworkForm.jsx'
 import ComingSoon from './Components/ComingSoon.jsx'
+import ErrorMessage from './Components/ErrorMessage.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <ArtworkList />
+    element: <ArtworkList />,
+    errorElement: <ErrorMessage />
   },
   {path: "/artist/:name",
-    element: <ArtistPage />
+    element: <ArtistPage />,
+    errorElement: <ErrorMessage />
   },
   {path: "/artworks/new",
-    element: <ArtworkForm />
+    element: <ArtworkForm />,
+    errorElement: <ErrorMessage />
   },
   {
     path: "/comingsoon",
-    element: <ComingSoon />
+    element: <ComingSoon />,
+    errorElement: <ErrorMessage />
   }
 ])
 
