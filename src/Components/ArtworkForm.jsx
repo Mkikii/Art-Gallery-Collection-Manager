@@ -3,12 +3,12 @@ import NavBar from './NavBar'
 
 
 const ArtworkForm = () => {
-  return (
+    return (
     <>
     <NavBar />
     <h1>ADD NEW ART</h1>
     </>
-  )
+    )
 }
 
 export default ArtworkForm
