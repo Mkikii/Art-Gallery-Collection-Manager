@@ -1,10 +1,9 @@
 import React from 'react'
-import NavBar from './NavBar'
+
 
 const ArtworkList = ( { artWorks}) => {
     return (
     <>
-    <header> <NavBar /></header>
     <main>
     <h1>HOME PAGE</h1>
     {artWorks.map(art => (
