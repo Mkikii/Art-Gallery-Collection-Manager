@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 
 const ArtworkList = ( { artWorks}) => {
@@ -11,6 +13,9 @@ const ArtworkList = ( { artWorks}) => {
             <h3>{art.title}</h3>
             <p> by {art.artist} </p>
             <img src={art.image} alt={art.title} />
+            <Link to = {`/artist/${art.artist}`}>
+            <button>View Artist's Work</button>         
+            </Link>
         </div>
     ))}
     </main>

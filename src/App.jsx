@@ -41,10 +41,10 @@ function App() {
       <NavBar />
       <Routes>
         <Route  path="/" element={<ArtworkList artWorks={artWorks} />}  />
-        <Route  path="/artworks/new"  element={<ArtworkForm />}  />
+        <Route  path="/artworks/new"  element={<ArtworkForm />} />
         <Route  path="/comingsoon" element={<ComingSoon />} />
-        <Route  path="/artist/:name" element={<ArtistPage />} />
-        <Route  path="*" element={<ErrorMessage />}      />
+        <Route  path="/artist/:name" element={<ArtistPage artWorks={artWorks} />} />
+        <Route  path="*" element={<ErrorMessage />} />
         </Routes>
         </>
     

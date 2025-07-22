@@ -1,13 +1,11 @@
 import React from 'react'
-import { useRouteError } from 'react-router-dom'
 
 const ErrorMessage = () => {
-    const error = useRouteError();
-    console.error(error)
     return (
         <>
         <main>
-            <h1>Whoops! Something went wrong!</h1>
+            <h1>404- Page Not Found</h1>
+            <p>The page you're looking for doesn't exist</p>
         </main>
         </>
     )
