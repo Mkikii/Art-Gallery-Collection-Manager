@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     setLoading(true); // I'm setting loading to true to indicate that data fetching has started.
    
-    fetch('http://localhost:3000/artworks')
+    fetch('https://json-server-4-b4vp.onrender.com/artworks')
       .then(response => {
         
         if (!response.ok) {

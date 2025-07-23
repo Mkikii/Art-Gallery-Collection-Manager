@@ -28,7 +28,7 @@ function ArtworkForm({ onAddArtwork }) {
     };
 
     // I'm making a POST request to my json-server API.
-    fetch('http://localhost:3000/artworks', {
+    fetch('https://json-server-4-b4vp.onrender.com/artworks', {
       method: 'POST', 
       headers: {
         'Content-Type': 'application/json', 
