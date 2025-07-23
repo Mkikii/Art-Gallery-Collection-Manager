@@ -1,0 +1,33 @@
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellowgreen;
+    color: blue;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+.links{
+    display: flex;
+    gap: 30px;
+}
+
+.link{
+    color: blue;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    padding: 16px;
+    transition: background-color 1s;
+}
+
+.link:hover{
+    background-color: red;
+}
+
+.link.active{
+    background-color: gold;
+}
+
