@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react'; // I'm importing React hooks for state and side effects.
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // I'm importing routing components to manage different pages.
 
@@ -97,6 +98,7 @@ function App() {
     </Router>
   );
 }
+
 
 
 export default App;
