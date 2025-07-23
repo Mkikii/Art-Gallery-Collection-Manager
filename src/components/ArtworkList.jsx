@@ -1,20 +1,29 @@
 import React from 'react';
-import ArtworkCard from './ArtworkCard'; // I'll import the ArtworkCard component here, as I'll be using it to display each artwork.
+import { Link } from 'react-router-dom'; 
+import ArtworkCard from './ArtworkCard'; 
 
-function ArtworkList({ artworks }) { // I expect to receive an 'artworks' array as a prop from my parent component App.jsx.
-  console.log("ArtworkList: Received artworks", artworks); // My own logging to see what data I'm getting.
-
+function ArtworkList({ artworks }) { 
   if (!artworks || artworks.length === 0) {
-    return <p>No artworks to display. Maybe add some new pieces!</p>; // A helpful message if there are no artworks.
+    return (
+      <div className="text-center py-10">
+        <p className="text-gray-600 text-lg">No artworks to display. Be the first to add one!</p>
+        
+        <Link to="/artworks/new" className="mt-4 inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors shadow-md">
+          Add New Artwork
+        </Link>
+      </div>
+    );
   }
 
   return (
-    <section className="artwork-list-container"> {/* I'm using a section for semantic HTML */}
-      <h2 className="list-heading">Our Current Collection</h2>
-      <div className="artwork-grid"> {/* This div will hold all my individual ArtworkCards, and I'll style it as a grid. */}
+    // This section is the main container for my list of artworks.
+    <section className="py-8">
+     
+      <h2 className="text-4xl font-extrabold text-gray-900 mb-8 text-center">Our Current Collection</h2>
+ 
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        
         {artworks.map(artwork => (
-          // I'm iterating over the 'artworks' array. For each 'artwork' object, I'll render an ArtworkCard.
-          // The 'key' prop is crucial for React's efficiency when rendering lists! I'll use artwork.id.
           <ArtworkCard key={artwork.id} artwork={artwork} />
         ))}
       </div>
@@ -22,5 +31,5 @@ function ArtworkList({ artworks }) { // I expect to receive an 'artworks' array 
   );
 }
 
-// I need to export this component so other parts of the application can use it.
+
 export default ArtworkList;
