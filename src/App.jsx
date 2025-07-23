@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react'; 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -25,7 +24,7 @@ function App() {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`); 
         }
-        return response.json(); 
+        return response.json(); // I'm parsing the JSON data from the response.
       })
       .then(data => {
         setArtworks(data); // If successful, I'm updating my 'artworks' state with the fetched data.
@@ -33,20 +32,19 @@ function App() {
       
       .finally(() => {
        
-        setLoading(false); 
+        setLoading(false); // I'm setting loading to false.
       });
   }, []); // The empty dependency array '[]' means this effect runs only once when the component mounts.
 
-  // This function is passed down to the ArtworkForm component.
-  
-  
+ 
+
   const handleAddArtwork = (newArtwork) => {
     // I'm updating the 'artworks' array by adding the 'newArtwork' to the existing list.
     
     setArtworks(prevArtworks => [...prevArtworks, newArtwork]);
   };
 
-  
+  // I'm rendering different content based on the application's current state (loading, error, or data ready).
   if (loading) {
     return (
       <div className="min-h-screen flex justify-center items-center bg-gray-100">
@@ -67,7 +65,7 @@ function App() {
     // I'm wrapping my entire application with 'BrowserRouter' to enable client-side routing.
     <Router>
       <div className="min-h-screen bg-gray-100 font-sans text-gray-800">
-        
+     
         <Navbar />
         
         <main className="container mx-auto p-4 sm:p-6 lg:p-8">
@@ -82,7 +80,7 @@ function App() {
            
             <Route path="/artists/:name" element={<ArtistPage artworks={artworks} />} />
 
-            
+           
             <Route path="*" element={<h2 className="text-center text-3xl mt-10 text-gray-700">404 - Page Not Found</h2>} />
           </Routes>
         </main>
@@ -90,7 +88,6 @@ function App() {
     </Router>
   );
 }
-
 
 
 export default App;
