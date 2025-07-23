@@ -1,16 +1,64 @@
+
 {
-    "artworks" : [
+
+  "artworks": [
     {
-        "id": 1,
-        "title": "Starry Night",
-        "artist":"Vincent Van Gogh",
-        "image":  "https://plus.unsplash.com/premium_photo-1664272436668-78437b92929e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "id": 1,
+      "title": "The Starry Night",
+      "artist": "Vincent van Gogh",
+      "image": "/images/Starry Night.jpg",
+      "year": 1889,
+      "genre": "Post-Impressionism"
     },
     {
-        "id": 2,
-        "title": "Mona Lisa",
-        "artist": "Leonardo Da Vinci",
-        "image": "https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "id": 2,
+      "title": "Mona Lisa",
+      "artist": "Leonardo da Vinci",
+      "image": "/images/Monalisa.jpg",
+      "year": 1503,
+      "genre": "Renaissance"
+    },
+    {
+      "id": 3,
+      "title": "The Persistence of Memory",
+      "artist": "Salvador Dalí",
+      "image": "/images/The_Persistence_of_Memory.jpg",
+      "year": 1931,
+      "genre": "Surrealism"
+    },
+    {
+      "id": 4,
+      "title": "Girl with a Pearl Earring",
+      "artist": "Johannes Vermeer",
+      "image": "/images/Girl With Pearl Earing .jpg",
+      "year": 1665,
+      "genre": "Dutch Golden Age"
+    },
+    {
+      "id": 5,
+      "title": "Irises",
+      "artist": "Vincent van Gogh",
+      "image": "/images/irises.jpg",
+      "year": 1889,
+      "genre": "Post-Impressionism"
+    },
+    {
+      "id": 6,
+      "title": "The Last Supper",
+      "artist": "Leonardo da Vinci",
+      "image": "/images/The Last Supper .jpg",
+      "year": 1495,
+      "genre": "Renaissance"
+    },
+    {
+      "id": 7,
+      "title": "Impression, Sunrise",
+      "artist": "Claude Monet",
+      "image": "/images/Impression Sunrise.jpg",
+      "year": 1872,
+      "genre": "Impressionism"
     }
-    ]
+  ]
 }
+
+
