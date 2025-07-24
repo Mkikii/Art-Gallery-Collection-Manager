@@ -156,13 +156,15 @@ Vite will compile your React application and provide a local development server 
 
 If you have any questions, suggestions, or need assistance, please contact:
 
-- Email: <mathualex72@gmail.com>
+- Email: <alex232nyamai@gmail.com>,
+       : <mathualex72@gmail.com>,
+       : <cheronlilian21@gmail.com>
 
 ## License
 
 MIT License
 
-Copyright &copy; 2025 Lilian Cherono, Alex Dunamis and Mathu Alex.
+Copyright &copy; 2025 Lilian Cherono, Alex Nyamai and Mathu Alex.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
