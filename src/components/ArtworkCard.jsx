@@ -26,3 +26,4 @@ function ArtworkCard({ artwork }) {
 
 
 export default ArtworkCard;
+c
