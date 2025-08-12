@@ -73,6 +73,13 @@ art-gallery-collection-manager/
 ├── package.json        <-- Project dependencies and scripts
 └── vite.config.js      <-- Vite configuration
 
+## Deployment Links
+
+- View the deployment application at: "https://art-gallery-manager.netlify.app/"
+
+- Repository Link: "https://github.com/Dunamis-001/Art-Gallery-Collection-Manager"
+
+- Deployed API: "https://json-server-4-b4vp.onrender.com"
 
 ## Setup Instructions
 
@@ -145,13 +152,19 @@ Vite will compile your React application and provide a local development server 
 
 - Artist Page (/artists/:name): Click on an artist's name from any artwork card to see all pieces by that specific artist.
 
+## Support and Contact Details
 
+If you have any questions, suggestions, or need assistance, please contact:
+
+- Email: <alex232nyamai@gmail.com>,
+       : <mathualex72@gmail.com>,
+       : <cheronlilian21@gmail.com>
 
 ## License
 
 MIT License
 
-Copyright &copy; 2025 Lilian Cherono.
+Copyright &copy; 2025 Lilian Cherono, Alex Nyamai and Mathu Alex.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
