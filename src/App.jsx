@@ -10,7 +10,7 @@ import ArtistPage from './components/ArtistPage';
 function App() {
  
   const [artworks, setArtworks] = useState([]);
-  // I'm using these states to show a loading message while data is being fetched.
+
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
